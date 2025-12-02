@@ -1,1 +1,22 @@
-CREATE DATABASE college
+CREATE DATABASE college;
+USE college;
+
+CREATE TABLE students(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+marks INT,
+city VARCHAR(50)
+);
+
+INSERT INTO students
+(id,name,marks,city)
+VALUES
+(1, 'Ayaan', 78, 'Gorakhpur'),
+(2, 'Zara', 85, 'Lucknow'),
+(3, 'Kabir', 92, 'Delhi'),
+(4, 'Mehak', 67, 'Mumbai'),
+(5, 'Rehan', 88, 'Hyderabad'),
+(6, 'Simran', 72, 'Pune'),
+(7, 'Zaryab', 95, 'Gorakhpur');
+
+SELECT id, city FROM students;
