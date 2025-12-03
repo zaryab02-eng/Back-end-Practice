@@ -24,3 +24,7 @@ SELECT id, city FROM students;
 SELECT name, city FROM students
 WHERE marks > 80
 ORDER BY name ASC;
+
+SELECT id, name, marks FROM students
+WHERE city = 'Gorakhpur'
+ORDER BY marks DESC;
