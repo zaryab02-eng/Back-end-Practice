@@ -20,3 +20,7 @@ VALUES
 (7, 'Zaryab', 95, 'Gorakhpur');
 
 SELECT id, city FROM students;
+
+SELECT name, city FROM students
+WHERE marks > 80
+ORDER BY name ASC;
