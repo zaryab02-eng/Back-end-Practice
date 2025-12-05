@@ -32,3 +32,7 @@ ORDER BY marks DESC;
 SELECT name, marks FROM students
 ORDER BY marks DESC
 LIMIT 3;
+
+SELECT name,city, marks FROM students
+ORDER BY marks ASC
+LIMIT 1;
