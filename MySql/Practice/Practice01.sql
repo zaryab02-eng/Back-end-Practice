@@ -28,3 +28,7 @@ ORDER BY name ASC;
 SELECT id, name, marks FROM students
 WHERE city = 'Gorakhpur'
 ORDER BY marks DESC;
+
+SELECT name, marks FROM students
+ORDER BY marks DESC
+LIMIT 3;
