@@ -36,3 +36,6 @@ LIMIT 3;
 SELECT name,city, marks FROM students
 ORDER BY marks ASC
 LIMIT 1;
+
+SELECT DISTINCT marks FROM students
+ORDER BY marks DESC;
