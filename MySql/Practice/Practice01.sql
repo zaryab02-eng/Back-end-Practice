@@ -47,6 +47,7 @@ SELECT city, COUNT(*)
 FROM students
 GROUP BY city;
 
-SELECT city, AVG(marks)
+SELECT city, AVG(marks) AS avg_marks
 FROM students
-GROUP BY city;
+GROUP BY city
+ORDER BY avg_marks DESC;
