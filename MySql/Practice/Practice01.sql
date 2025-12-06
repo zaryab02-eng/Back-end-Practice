@@ -42,3 +42,7 @@ ORDER BY marks DESC;
 
 SELECT COUNT(*) from students
 WHERE marks > 80;
+
+SELECT city, COUNT(*)
+FROM students
+GROUP BY city;
