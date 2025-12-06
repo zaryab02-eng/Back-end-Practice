@@ -46,3 +46,7 @@ WHERE marks > 80;
 SELECT city, COUNT(*)
 FROM students
 GROUP BY city;
+
+SELECT city, AVG(marks)
+FROM students
+GROUP BY city;
