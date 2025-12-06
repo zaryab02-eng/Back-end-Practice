@@ -39,3 +39,6 @@ LIMIT 1;
 
 SELECT DISTINCT marks FROM students
 ORDER BY marks DESC;
+
+SELECT COUNT(*) from students
+WHERE marks > 80;
