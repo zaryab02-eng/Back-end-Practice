@@ -14,3 +14,14 @@ ORDER BY marks DESC
 LIMIT 2;
 
 SELECT DISTINCT city FROM students;
+
+SELECT COUNT(*) FROM students
+WHERE marks < 75;
+
+SELECT marks FROM students
+ORDER BY marks DESC
+LIMIT 1;
+
+SELECT city, AVG(marks) AS avg_marks
+FROM students
+GROUP BY city;
