@@ -25,3 +25,11 @@ LIMIT 1;
 SELECT city, AVG(marks) AS avg_marks
 FROM students
 GROUP BY city;
+
+SELECT city, COUNT(*)
+FROM students
+GROUP BY city;
+
+SELECT city , MAX(marks) as highest_marks
+FROM students
+GROUP BY city;
