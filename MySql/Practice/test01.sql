@@ -33,3 +33,6 @@ GROUP BY city;
 SELECT city , MAX(marks) as highest_marks
 FROM students
 GROUP BY city;
+
+SELECT name FROM students
+WHERE marks > 60 AND marks < 90;
