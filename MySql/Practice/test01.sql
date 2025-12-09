@@ -56,3 +56,10 @@ LIMIT 1;
 SELECT marks FROM students
 ORDER BY marks ASC
 LIMIT 1;
+
+SELECT city, COUNT(*) FROM students
+GROUP BY city;
+
+SELECT city , MAX(marks) as highest_mark
+FROM students
+GROUP BY city;
