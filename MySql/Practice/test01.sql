@@ -36,3 +36,9 @@ GROUP BY city;
 
 SELECT name, city FROM students
 WHERE marks = 95;
+
+SELECT id, name, marks FROM students
+WHERE city = "Lucknow";
+
+SELECT * FROM students
+WHERE marks = 72 OR marks = 88;
