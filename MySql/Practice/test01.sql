@@ -42,3 +42,17 @@ WHERE city = "Lucknow";
 
 SELECT * FROM students
 WHERE marks = 72 OR marks = 88;
+
+SELECT name FROM students
+WHERE city != "Delhi";
+
+SELECT id, name FROM students
+WHERE marks < 80;
+
+SELECT name, marks FROM students
+ORDER BY marks DESC
+LIMIT 1;
+
+SELECT marks FROM students
+ORDER BY marks ASC
+LIMIT 1;
