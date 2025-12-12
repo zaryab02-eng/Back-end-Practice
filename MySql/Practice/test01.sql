@@ -66,3 +66,15 @@ GROUP BY city;
 
 SELECT name, marks FROM students
 WHERE city = "Gorakhpur" AND marks > 80;
+
+SELECT id, name, marks FROM students
+WHERE marks < 70 OR marks > 90;
+
+SELECT * FROM students
+WHERE name LIKE '%n';
+
+SELECT * FROM students
+WHERE city LIKE '%o%';
+
+SELECT * FROM students
+WHERE name LIKE '_____';
