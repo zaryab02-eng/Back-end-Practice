@@ -63,3 +63,6 @@ GROUP BY city;
 SELECT city , MAX(marks) as highest_mark
 FROM students
 GROUP BY city;
+
+SELECT name, marks FROM students
+WHERE city = "Gorakhpur" AND marks > 80;
