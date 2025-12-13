@@ -92,3 +92,8 @@ SELECT city, COUNT(*)
 FROM students
 GROUP BY city
 HAVING COUNT(*) > 1;
+
+SELECT city, AVG(marks) AS avg_marks
+FROM students
+GROUP BY city
+HAVING AVG(marks) > 80;
