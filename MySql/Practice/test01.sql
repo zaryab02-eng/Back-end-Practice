@@ -78,3 +78,9 @@ WHERE city LIKE '%o%';
 
 SELECT * FROM students
 WHERE name LIKE '_____';
+
+SELECT * FROM students
+WHERE marks BETWEEN 75 AND 90;
+
+SELECT name, marks FROM students
+WHERE marks NOT BETWEEN 80 AND 90;
