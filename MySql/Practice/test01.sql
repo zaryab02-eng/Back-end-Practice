@@ -84,3 +84,6 @@ WHERE marks BETWEEN 75 AND 90;
 
 SELECT name, marks FROM students
 WHERE marks NOT BETWEEN 80 AND 90;
+
+SELECT id, name FROM students
+WHERE marks NOT BETWEEN 60 AND 75;
