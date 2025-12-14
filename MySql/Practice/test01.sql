@@ -127,3 +127,8 @@ SELECT city, AVG(marks), COUNT(*)
 FROM students
 GROUP BY city
 HAVING AVG(marks) BETWEEN 70 AND 90 AND COUNT(*) > 1;
+
+SELECT city , AVG(marks)
+FROM students
+WHERE marks > 70
+GROUP BY city;
