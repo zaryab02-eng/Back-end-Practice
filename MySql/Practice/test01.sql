@@ -132,3 +132,9 @@ SELECT city , AVG(marks)
 FROM students
 WHERE marks > 70
 GROUP BY city;
+
+SELECT city, AVG(marks)
+FROM students
+WHERE marks > 70
+GROUP BY city
+HAVING AVG(marks) > 80;
