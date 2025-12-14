@@ -117,3 +117,8 @@ SELECT city ,COUNT(*)
 FROM students
 GROUP BY city
 HAVING AVG(marks) < 80;
+
+SELECT city, MAX(marks), COUNT(*)
+FROM students
+GROUP BY city
+HAVING MAX(marks) > 85 AND COUNT(*) >= 2;
