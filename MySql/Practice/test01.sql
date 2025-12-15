@@ -147,3 +147,8 @@ SELECT city, COUNT(*)
 FROM students
 WHERE city IN("Delhi","Gorakhpur")
 GROUP BY city;
+
+SELECT city, AVG(marks)
+FROM students
+WHERE city IN ("Delhi","Gorakhpur","Lucknow")
+GROUP BY city;
