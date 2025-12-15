@@ -138,3 +138,7 @@ FROM students
 WHERE marks > 70
 GROUP BY city
 HAVING AVG(marks) > 80;
+
+SELECT name, marks 
+FROM students
+WHERE city IN ("Delhi","Gorakhpur");
