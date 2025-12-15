@@ -142,3 +142,6 @@ HAVING AVG(marks) > 80;
 SELECT name, marks 
 FROM students
 WHERE city IN ("Delhi","Gorakhpur");
+
+SELECT * FROM students
+WHERE city NOT IN ("Delhi","Mumbai");
