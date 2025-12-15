@@ -143,5 +143,7 @@ SELECT name, marks
 FROM students
 WHERE city IN ("Delhi","Gorakhpur");
 
-SELECT * FROM students
-WHERE city NOT IN ("Delhi","Mumbai");
+SELECT city, COUNT(*)
+FROM students
+WHERE city IN("Delhi","Gorakhpur")
+GROUP BY city;
