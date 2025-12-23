@@ -160,3 +160,7 @@ AND marks > 75;
 SELECT name, marks
 FROM students
 WHERE marks > (SELECT AVG(marks) FROM students);
+
+SELECT name, city
+FROM students
+WHERE marks < (SELECT MAX(marks) FROM students);
