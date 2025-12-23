@@ -156,3 +156,7 @@ GROUP BY city;
 SELECT * FROM students
 WHERE city NOT IN ("Delhi","Mumbai","Pune")
 AND marks > 75;
+
+SELECT name, marks
+FROM students
+WHERE marks > (SELECT AVG(marks) FROM students);
