@@ -176,3 +176,7 @@ WHERE marks = (
   FROM students s2
   WHERE s2.city = s1.city
 );
+
+SELECT city, AVG(marks)
+FROM students
+GROUP BY city;
